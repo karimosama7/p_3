@@ -165,12 +165,30 @@ section .imge {
     transform: rotate(-30deg);
     z-index: -1;
 
-
 }
 
 section footer img {
     position: absolute;
     bottom: -5px;
     left: 450px;
+    animation-name: span;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes span {
+    0% {
+        bottom: -5px;
+    }
+
+    50% {
+        bottom: 60px;
+    }
+
+    100% {
+        bottom: -5px;
+    }
 
 }
